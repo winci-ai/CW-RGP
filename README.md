@@ -58,9 +58,9 @@ Our pre-trained ResNet-50 models:
 ### Transferring to Object Detection
 Same as [MoCo](https://github.com/facebookresearch/moco) for object detection transfer, please see [moco/detection](https://github.com/facebookresearch/moco/tree/master/detection).
 
-| datasets |$AP_{50}$| AP | $AP_{75}$ |
+| datasets |$AP_{50}$| $AP$ | $AP_{75}$ |
 | :----:  |:------:| :--: | :--: | 
-| VOC 07+12 detection  | 82.2$_{±0.07}$|2  |1|1|
+| VOC 07+12 detection  | $82.2_{±0.07}$|2  |1|1|
 | COCO detection|  1 |  1  | 1 | 
 | COCO instance seg.| 1| 1 |  1 | 2 |
 
