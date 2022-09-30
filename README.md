@@ -32,10 +32,10 @@ Our pre-trained ResNet-50 models:
 <table><tbody>
 <!-- START TABLE -->
 <!-- TABLE HEADER -->
-<th valign="bottom">pre-train<br/>epochs</th>
+<th valign="bottom">pretrained<br/>epochs</th>
 <th valign="bottom">batch<br/>size</th>
-<th valign="bottom">pre-train<br/>ckpt</th>
-<th valign="bottom">linear cls.<br/>ckpt</th>
+<th valign="bottom">pretrained<br/>ckpt</th>
+<th valign="bottom">lincls<br/>ckpt</th>
 <th valign="center">top-1 acc.</th>
 <!-- TABLE BODY -->
 <tr>
