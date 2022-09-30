@@ -28,13 +28,13 @@ The results are shown in the following table:
 The unsupervised pretraining and linear classification scripts for ImageNet are shown in `scripts/ImageNet.sh`
 
 #### Pre-trained Models
-Our pre-trained ResNet-50 models:
+Our pretrained ResNet-50 models:
 <table><tbody>
 <!-- START TABLE -->
 <!-- TABLE HEADER -->
-<th valign="bottom">pretrained<br/>epochs</th>
+<th valign="bottom">pretrain<br/>epochs</th>
 <th valign="bottom">batch<br/>size</th>
-<th valign="bottom">pretrained<br/>ckpt</th>
+<th valign="bottom">pretrain<br/>ckpt</th>
 <th valign="bottom">lincls<br/>ckpt</th>
 <th valign="center">top-1 acc.</th>
 <!-- TABLE BODY -->
