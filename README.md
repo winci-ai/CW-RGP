@@ -13,7 +13,7 @@ The code includes experiments in section 4.1.
 The datasets include CIFAR-10, CIFAR-100, STL-10 and Tiny ImageNet, 
 and the setup is strictly following [W-MSE paper](https://arxiv.org/abs/2007.06346).
 
-The unsupervised pre-training scripts for small and medium datasets are shown in `scripts/base.sh`
+The unsupervised pretraining scripts for small and medium datasets are shown in `scripts/base.sh`
 
 The results are shown in the following table:
 
@@ -25,7 +25,7 @@ The results are shown in the following table:
 
 ### Experimental Setup for Large-Scale Classification
 
-The unsupervised pre-training and linear classification scripts for ImageNet are shown in `scripts/ImageNet.sh`
+The unsupervised pretraining and linear classification scripts for ImageNet are shown in `scripts/ImageNet.sh`
 
 #### Pre-trained Models
 Our pre-trained ResNet-50 models:
@@ -57,7 +57,7 @@ Our pre-trained ResNet-50 models:
 ### Transferring to Object Detection
 Same as [MoCo](https://github.com/facebookresearch/moco) for object detection transfer, please see [moco/detection](https://github.com/facebookresearch/moco/tree/master/detection).
 
-Transfer learning results of CW-RPG (200 epochs pre-trained on ImageNet):
+Transfer learning results of CW-RGP (200-epochs pretrained on ImageNet):
 | downstream task |$AP_{50}$| $AP$ | $AP_{75}$ |ckpt|log|
 | :----:  |:------:| :--: | :--: | :--: | :--: |
 | VOC 07+12 detection  | $82.2_{±0.07}$|$57.2_{±0.10}$ | $63.8_{±0.11}$| [voc_ckpt](https://drive.google.com/file/d/1yUnBCCqcjBRhFJMi8R-cvnTIgqCUh7YB/view?usp=sharing)|[voc_log](https://drive.google.com/file/d/1tKUmBHUQiNZauiZ3Oe4-6YMsRG9iqILp/view?usp=sharing)|
