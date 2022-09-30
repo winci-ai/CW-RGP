@@ -10,7 +10,7 @@ This is a PyTorch implementation of the paper.
 ## Experiments
 The code includes experiments in section 4.1. 
 
-#### Experimental Setup for Comparison of Baselines
+### Experimental Setup for Comparison of Baselines
 The datasets include CIFAR-10, CIFAR-100, STL-10 and Tiny ImageNet, 
 and the setup is strictly following [W-MSE paper](https://arxiv.org/abs/2007.06346).
 
@@ -24,11 +24,11 @@ The results are shown in the following table:
 | CW-RGP 2|  91.92 &nbsp;&nbsp;&nbsp;   89.54 |  67.51 &nbsp;&nbsp;&nbsp;   57.35  |90.76 &nbsp;&nbsp;&nbsp;   87.34|  49.23 &nbsp;&nbsp;&nbsp;   34.04 |
 | CW-RGP 4|  92.47 &nbsp;&nbsp;&nbsp; 90.74| 68.26 &nbsp;&nbsp;&nbsp;  58.67 |92.04 &nbsp;&nbsp;&nbsp; 88.95| 50.24 &nbsp;&nbsp;&nbsp;  35.99 |
 
-#### Experimental Setup for Large-Scale Classification
+### Experimental Setup for Large-Scale Classification
 
 the unsupervised pre-training and linear classification scripts for ImageNet are shown in `scripts/ImageNet.sh`
 
-### Pre-trained Models
+#### Pre-trained Models
 Our pre-trained ResNet-50 models:
 <table><tbody>
 <!-- START TABLE -->
@@ -58,13 +58,9 @@ Our pre-trained ResNet-50 models:
 ### Transferring to Object Detection
 Same as [MoCo](https://github.com/facebookresearch/moco) for object detection transfer, please see [moco/detection](https://github.com/facebookresearch/moco/tree/master/detection).
 
+| datasets |AP$_{50}$| AP |AP$_{75}& |
+| :----:  |:------:| :--: | :--: | 
+| VOC 07+12 detection  | 82.2$_{±0.07}$|2  |1|1|
+| COCO detection|  1 |  1  | 1 | 
+| COCO instance seg.| 1| 1 |  1 | 2 |
 
-<!--## Citation
-```
-@article{ermolov2020whitening,
-  title={Whitening for Self-Supervised Representation Learning}, 
-  author={Aleksandr Ermolov and Aliaksandr Siarohin and Enver Sangineto and Nicu Sebe},
-  journal={arXiv preprint arXiv:2007.06346},
-  year={2020}
-}
-```>
