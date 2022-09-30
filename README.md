@@ -20,16 +20,11 @@ the unsupervised pre-training scripts for small and medium datasets are shown in
 
 the unsupervised pre-training and linear classification scripts for ImageNet are shown in `scripts/ImageNet.sh`
 
-| Method   |&nbsp;&nbsp;&nbsp;&nbsp; CIFAR-10 |  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;CIFAR-100 |
+| Method   |&nbsp;&nbsp;&nbsp;&nbsp; CIFAR-10 |  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;CIFAR-100 ||&nbsp;&nbsp;&nbsp;&nbsp; STL-10 |  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Tiny-ImageNet |
 | :--------:  |:-------------:| :--: |
-|   | top-1 &nbsp;&nbsp;&nbsp; 5-nn | &nbsp; &nbsp;top-1 &nbsp;&nbsp;&nbsp; 5-nn  |
-| CW 2| 91.66 &nbsp;&nbsp;&nbsp; 88.99 |  &nbsp; &nbsp;66.26  &nbsp;&nbsp;&nbsp;  56.36 |
-| CW-GP 2 |  91.61  &nbsp;&nbsp;&nbsp;  88.89 | &nbsp; &nbsp; 66.17  &nbsp;&nbsp;&nbsp;  56.53  |
-| **CW-RGP 2**|  **91.92** &nbsp;&nbsp;&nbsp;   **89.54** | &nbsp; &nbsp; **67.51** &nbsp;&nbsp;&nbsp;   **57.35**  |
-| | |
-| CW 4| 92.10 &nbsp;&nbsp;&nbsp;  90.12 | &nbsp; &nbsp; 66.90 &nbsp;&nbsp;&nbsp;  57.12 |
-| CW-GP 4 |  92.08  &nbsp;&nbsp;&nbsp; 90.06 |&nbsp; &nbsp; 67.34 &nbsp;&nbsp;&nbsp;  57.28  |
-| **CW-RGP 4**|  **92.47** &nbsp;&nbsp;&nbsp; **90.74**| &nbsp; &nbsp; **68.26** &nbsp;&nbsp;&nbsp;  **58.67** |
+|   | top-1 &nbsp;&nbsp;&nbsp; 5-nn | &nbsp; &nbsp;top-1 &nbsp;&nbsp;&nbsp; 5-nn  |top-1 &nbsp;&nbsp;&nbsp; 5-nn | &nbsp; &nbsp;top-1 &nbsp;&nbsp;&nbsp; 5-nn  |
+| **CW-RGP 2**|  **91.92** &nbsp;&nbsp;&nbsp;   **89.54** | &nbsp; &nbsp; **67.51** &nbsp;&nbsp;&nbsp;   **57.35**  |**90.76** &nbsp;&nbsp;&nbsp;   **87.34** | &nbsp; &nbsp; **49.23** &nbsp;&nbsp;&nbsp;   **34.04**  |
+| **CW-RGP 4**|  **92.47** &nbsp;&nbsp;&nbsp; **90.74**| &nbsp; &nbsp; **68.26** &nbsp;&nbsp;&nbsp;  **58.67** |**92.04** &nbsp;&nbsp;&nbsp; **88.95**| &nbsp; &nbsp; **50.24** &nbsp;&nbsp;&nbsp;  **35.99** |
 
 ### Pre-trained Models
 Our pre-trained ResNet-50 models:
