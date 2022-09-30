@@ -57,6 +57,7 @@ Our pre-trained ResNet-50 models:
 ### Transferring to Object Detection
 Same as [MoCo](https://github.com/facebookresearch/moco) for object detection transfer, please see [moco/detection](https://github.com/facebookresearch/moco/tree/master/detection).
 
+Results of transfer learning:
 | downstream task |$AP_{50}$| $AP$ | $AP_{75}$ |ckpt|log|
 | :----:  |:------:| :--: | :--: | :--: | :--: |
 | VOC 07+12 detection  | $82.2_{±0.07}$|$57.2_{±0.10}$ | $63.8_{±0.11}$| [voc_ckpt](https://drive.google.com/file/d/1yUnBCCqcjBRhFJMi8R-cvnTIgqCUh7YB/view?usp=sharing)|[voc_log](https://drive.google.com/file/d/1tKUmBHUQiNZauiZ3Oe4-6YMsRG9iqILp/view?usp=sharing)|
