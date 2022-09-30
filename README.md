@@ -60,7 +60,7 @@ Same as [MoCo](https://github.com/facebookresearch/moco) for object detection tr
 
 | datasets |$AP_{50}$| $AP$ | $AP_{75}$ |
 | :----:  |:------:| :--: | :--: | 
-| VOC 07+12 detection  | $82.2_{±0.07}$|2  |1|1|
-| COCO detection|  1 |  1  | 1 | 
-| COCO instance seg.| 1| 1 |  1 | 2 |
+| VOC 07+12 detection  | $82.2_{±0.07}$|$57.2_{±0.10}$ | $63.8_{±0.11}$|
+| COCO detection| $60.5_{±0.28}$|$40.7_{±0.14}$ | $44.1_{±0.14}$|
+| COCO instance seg.| $57.3_{±0.16}$|$35.5_{±0.12}$ | $37.9_{±0.14}$|
 
