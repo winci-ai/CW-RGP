@@ -20,6 +20,8 @@ the unsupervised pre-training scripts for small and medium datasets are shown in
 
 the unsupervised pre-training and linear classification scripts for ImageNet are shown in `scripts/ImageNet.sh`
 
+The results are shown in the following table:
+
 | Method   |CIFAR-10 | CIFAR-100 |STL-10 | Tiny-ImageNet |
 | :--------:  |:-------------:| :--: | :--: | :--: |
 |   | **top-1** &nbsp;&nbsp;&nbsp; **5-nn** |**top-1** &nbsp;&nbsp;&nbsp; **5-nn**  |**top-1** &nbsp;&nbsp;&nbsp; **5-nn** | **top-1** &nbsp;&nbsp;&nbsp; **5-nn**  |
