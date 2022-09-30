@@ -1,4 +1,3 @@
-
 #CW-RGP 4
 
 #train 100 epochs with 4 GPUs
