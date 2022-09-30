@@ -1,5 +1,4 @@
 from .contrastive import Contrastive
-from .stop import STOP
 from .byol import BYOL
 from .simsiam import SIMSIAM
 from .barlow_twins import BARLOW_TWINS
@@ -12,7 +11,7 @@ from .cwrg import CWRG
 from .zero_icl import ZeroICL
 
 
-METHOD_LIST = ["cwrg","contrastive","zero_icl","stop", "byol", 'simsiam', 'barlowtwins', 'vicreg', 'bn', 'pca', 'plain', 'pca', 'wmse']
+METHOD_LIST = ["cwrg","contrastive","zero_icl", "byol", 'simsiam', 'barlowtwins', 'vicreg', 'bn', 'pca', 'plain', 'pca', 'wmse']
 
 
 def get_method(name):

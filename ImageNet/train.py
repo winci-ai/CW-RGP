@@ -110,10 +110,7 @@ def main_worker(gpu, ngpus_per_node, cfg):
         # comment out the following line for debugging
         #raise NotImplementedError("Only DistributedDataParallel is supported.")
     else:
-        # AllGather implementation (batch shuffle, queue update, etc.) in
-        # this code only supports DistributedDataParallel.
         model.cuda().train()
-        #raise NotImplementedError("Only DistributedDataParallel is supported.")
     print(cfg) 
     print(model) # print model after SyncBatchNorm
 
