@@ -5,7 +5,7 @@ from methods.losses import norm_mse_loss
 
 
 class BN(BaseMethod):
-    """ implements W-MSE loss """
+    """ implements MSE loss """
     """ Batch Normalization """
 
     def __init__(self, cfg):

@@ -18,7 +18,7 @@ def get_head(out_size, cfg):
 
 def get_model(arch,cfg):
     """ creates encoder E() by name and modifies it for dataset """
-    model = getattr(models, arch)(pretrained=False)
+    model = getattr(models, arch)(pretrained=False, zero_init_residual=True)
     out_size = model.fc.in_features
     model.fc = nn.Identity()
     if not cfg.distributed:

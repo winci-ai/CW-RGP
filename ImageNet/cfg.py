@@ -27,7 +27,7 @@ def get_cfg():
         "--bs", type=int, default=512, help="train bs",
     )
     parser.add_argument(
-        "--bs_eval", type=int, default=512, help="eval bs",
+        "--bs_eval", type=int, default=1024, help="eval bs",
     )
     parser.add_argument('--lr', '--learning-rate', default=0.05, type=float,
                     metavar='LR', help='initial (base) learning rate for train', dest='lr')
@@ -76,7 +76,7 @@ def get_cfg():
     parser.add_argument(
         "--env_name",
         type=str,
-        default="CWRG",
+        default="CW-RGP",
         help="name of the run for wandb project",
     )
     parser.add_argument(
@@ -88,7 +88,7 @@ def get_cfg():
     parser.add_argument(
         "--num_samples",
         type=int,
-        default=2,
+        default=4,
         help="number of samples (d) generated from each image",
     )
     parser.add_argument(
@@ -112,10 +112,10 @@ def get_cfg():
         "--w_eps", type=float, default=0, help="eps for stability for whitening"
     )
     parser.add_argument(
-        "--head_layers", type=int, default=2, help="number of FC layers in head"
+        "--head_layers", type=int, default=3, help="number of FC layers in head"
     )
     parser.add_argument(
-        "--head_size", type=int, default=1024, help="size of FC layers in head"
+        "--head_size", type=int, default=2048, help="size of FC layers in head"
     )
 
     parser.add_argument(
@@ -149,7 +149,7 @@ def get_cfg():
         "--no_rg", dest="rand_group", action="store_false", help="don't use channel random group in whitening",
     )
     parser.add_argument("--minus", type=int, default=1, help='denominator n-x in calculating correlation matrix, default n-1')
-    parser.add_argument("--group", type=int, default=1, help='number of whitening groups')
+    parser.add_argument("--group", type=int, default=2, help='number of whitening groups')
 
 
 

@@ -10,32 +10,46 @@ This is a PyTorch implementation of the paper.
 ## Experiments
 The code includes experiments in section 4.1. 
 
-#### Evaluation for Classification
+#### Experimental Setup for Comparison of Baselines
 The datasets include CIFAR-10, CIFAR-100, STL-10 and Tiny ImageNet, 
 and the setup is strictly following [W-MSE paper](https://arxiv.org/abs/2007.06346).
 The results of classification can be reproduced by the following commands:
 
-```
-#### CW-RGP 4
-python train.py --dataset cifar10 --epochs 1000 --lr 3e-3 --num_samples 4 --bs 256 --w_size 64 --group 4
-python train.py --dataset cifar100 --epochs 1000 --lr 3e-3 --num_samples 4 --bs 256 --w_size 64 --group 4
-python train.py --dataset stl10 --epochs 2000 --lr 2e-3 --num_samples 4 --bs 256 --w_size 64 --group 4
-python train.py --dataset tiny_in --epochs 1000 --lr 2e-3 --num_samples 4 --bs 256 --emb 1024 --w_size 128 --group 2 --head_size 2048
+the unsupervised pre-training scripts for small and medium datasets are shown in `scripts/base.sh`
 
+#### Experimental Setup for Large-Scale Classification
 
-#### CW-RGP 2
-python train.py --dataset cifar10 --epochs 1000 --lr 3e-3 --bs 256 --w_size 64 --group 4 --w_iter 4
-python train.py --dataset cifar100 --epochs 1000 --lr 3e-3 --w_size 64 --group 4
-python train.py --dataset stl10 --epochs 2000 --lr 2e-3 --w_size 64 --group 4
-python train.py --dataset tiny_in --epochs 1000 --lr 2e-3 --emb 1024 --w_size 128 --group 2 --head_size 2048
-```
+the unsupervised pre-training and linear classification scripts for ImageNet are shown in `scripts/ImageNet.sh`
 
+### Pre-trained Models
+Our pre-trained ResNet-50 models:
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<th valign="bottom">pre-train<br/>epochs</th>
+<th valign="bottom">batch<br/>size</th>
+<th valign="bottom">pre-train<br/>ckpt</th>
+<th valign="bottom">linear cls.<br/>ckpt</th>
+<th valign="center">top-1 acc.</th>
+<!-- TABLE BODY -->
+<tr>
+<td align="center">100</td>
+<td align="center">512</td>
+<td align="center"><a href="https://drive.google.com/file/d/1p137aJGGtQIKc_UErx1F0IgUeEbhApS5/view?usp=sharing">link</a></td>
+<td align="center"><a href="https://drive.google.com/file/d/1xFsZjQZQ1SUPnhZ1MaZlODNjhqdNKW5h/view?usp=sharing">link</a></td>
+<td align="center">69.7</td>
+</tr>
+<tr>
+<td align="center">200</td>
+<td align="center">512</td>
+<td align="center"><a href="https://drive.google.com/file/d/1xMWmEW-AykQ5hdlfir0Tjjn8-UOOMHyx/view?usp=sharing">link</a></td>
+<td align="center"><a href="https://drive.google.com/file/d/1mqQS-YwbP7imf2LHRIp-wSmx-8AOjIAm/view?usp=sharing">link</a></td>
+<td align="center">71.0</td>
+</tr>
+</tbody></table>
 
-Use `--no_norm` to disable normalization (for Euclidean distance).
-
-#### Transfer to downstream tasks
-
-
+### Transferring to Object Detection
+Same as [MoCo](https://github.com/facebookresearch/moco) for object detection transfer, please see [moco/detection](https://github.com/facebookresearch/moco/tree/master/detection).
 
 
 <!--## Citation

@@ -29,7 +29,7 @@ def get_cfg():
     parser.add_argument(
         "--byol_tau", type=float, default=0.99, help="starting tau for byol loss"
     )
-    parser.add_argument('--barlow_lambda', default=0.0051, type=float, metavar='L',
+    parser.add_argument('--barlow_lambda', default=0.008, type=float, metavar='L',
                         help='weight on off-diagonal terms')
     parser.add_argument("--vicreg_sim", default=25, type=float)
     parser.add_argument("--vicreg_var", default=25, type=float)

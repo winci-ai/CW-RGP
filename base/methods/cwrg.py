@@ -5,7 +5,7 @@ from methods.base import BaseMethod
 from methods.losses import norm_mse_loss, covariance_loss
 
 class CWRG(BaseMethod):
-    """ implements CW-MSE loss """
+    """ implements CW-RGP loss """
     """ Channel Whitening """
 
     def __init__(self, cfg):
