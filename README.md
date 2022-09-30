@@ -13,7 +13,7 @@ The code includes experiments in section 4.1.
 The datasets include CIFAR-10, CIFAR-100, STL-10 and Tiny ImageNet, 
 and the setup is strictly following [W-MSE paper](https://arxiv.org/abs/2007.06346).
 
-the unsupervised pre-training scripts for small and medium datasets are shown in `scripts/base.sh`
+The unsupervised pre-training scripts for small and medium datasets are shown in `scripts/base.sh`
 
 The results are shown in the following table:
 
@@ -25,7 +25,7 @@ The results are shown in the following table:
 
 ### Experimental Setup for Large-Scale Classification
 
-the unsupervised pre-training and linear classification scripts for ImageNet are shown in `scripts/ImageNet.sh`
+The unsupervised pre-training and linear classification scripts for ImageNet are shown in `scripts/ImageNet.sh`
 
 #### Pre-trained Models
 Our pre-trained ResNet-50 models:
@@ -57,9 +57,9 @@ Our pre-trained ResNet-50 models:
 ### Transferring to Object Detection
 Same as [MoCo](https://github.com/facebookresearch/moco) for object detection transfer, please see [moco/detection](https://github.com/facebookresearch/moco/tree/master/detection).
 
-| datasets |$AP_{50}$| $AP$ | $AP_{75}$ |ckpt|log|
+| downstream task |$AP_{50}$| $AP$ | $AP_{75}$ |ckpt|log|
 | :----:  |:------:| :--: | :--: | :--: | :--: |
 | VOC 07+12 detection  | $82.2_{±0.07}$|$57.2_{±0.10}$ | $63.8_{±0.11}$| [voc_ckpt](https://drive.google.com/file/d/1yUnBCCqcjBRhFJMi8R-cvnTIgqCUh7YB/view?usp=sharing)|[voc_log](https://drive.google.com/file/d/1tKUmBHUQiNZauiZ3Oe4-6YMsRG9iqILp/view?usp=sharing)|
 | COCO detection| $60.5_{±0.28}$|$40.7_{±0.14}$ | $44.1_{±0.14}$|[coco_ckpt](https://drive.google.com/file/d/1ywNNEHGdX-ecztQV9nDFWN91Mu5cP1h6/view?usp=sharing) |[coco_log](https://drive.google.com/file/d/1ywNNEHGdX-ecztQV9nDFWN91Mu5cP1h6/view?usp=sharing)|
-| COCO instance seg.| $57.3_{±0.16}$|$35.5_{±0.12}$ | $37.9_{±0.14}$|[coco_ckpt](https://drive.google.com/file/d/1ywNNEHGdX-ecztQV9nDFWN91Mu5cP1h6/view?usp=sharing) | [coco_log](https://drive.google.com/file/d/1ywNNEHGdX-ecztQV9nDFWN91Mu5cP1h6/view?usp=sharing)|
+| COCO instance seg.| $57.3_{±0.16}$|$35.5_{±0.12}$ | $37.9_{±0.14}$|[coco_ckpt](https://drive.google.com/file/d/1_QGsK9Uvk60yeAgpMYChUB7QKc9kahTJ/view?usp=sharing) | [coco_log](https://drive.google.com/file/d/1ywNNEHGdX-ecztQV9nDFWN91Mu5cP1h6/view?usp=sharing)|
 
