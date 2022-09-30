@@ -13,13 +13,23 @@ The code includes experiments in section 4.1.
 #### Experimental Setup for Comparison of Baselines
 The datasets include CIFAR-10, CIFAR-100, STL-10 and Tiny ImageNet, 
 and the setup is strictly following [W-MSE paper](https://arxiv.org/abs/2007.06346).
-The results of classification can be reproduced by the following commands:
 
 the unsupervised pre-training scripts for small and medium datasets are shown in `scripts/base.sh`
 
 #### Experimental Setup for Large-Scale Classification
 
 the unsupervised pre-training and linear classification scripts for ImageNet are shown in `scripts/ImageNet.sh`
+
+| Method   |&nbsp;&nbsp;&nbsp;&nbsp; CIFAR-10 |  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;CIFAR-100 |
+| :--------:  |:-------------:| :--: |
+|   | top-1 &nbsp;&nbsp;&nbsp; 5-nn | &nbsp; &nbsp;top-1 &nbsp;&nbsp;&nbsp; 5-nn  |
+| CW 2| 91.66 &nbsp;&nbsp;&nbsp; 88.99 |  &nbsp; &nbsp;66.26  &nbsp;&nbsp;&nbsp;  56.36 |
+| CW-GP 2 |  91.61  &nbsp;&nbsp;&nbsp;  88.89 | &nbsp; &nbsp; 66.17  &nbsp;&nbsp;&nbsp;  56.53  |
+| **CW-RGP 2**|  **91.92** &nbsp;&nbsp;&nbsp;   **89.54** | &nbsp; &nbsp; **67.51** &nbsp;&nbsp;&nbsp;   **57.35**  |
+| | |
+| CW 4| 92.10 &nbsp;&nbsp;&nbsp;  90.12 | &nbsp; &nbsp; 66.90 &nbsp;&nbsp;&nbsp;  57.12 |
+| CW-GP 4 |  92.08  &nbsp;&nbsp;&nbsp; 90.06 |&nbsp; &nbsp; 67.34 &nbsp;&nbsp;&nbsp;  57.28  |
+| **CW-RGP 4**|  **92.47** &nbsp;&nbsp;&nbsp; **90.74**| &nbsp; &nbsp; **68.26** &nbsp;&nbsp;&nbsp;  **58.67** |
 
 ### Pre-trained Models
 Our pre-trained ResNet-50 models:
