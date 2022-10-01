@@ -18,8 +18,6 @@ def get_method(name):
     assert name in METHOD_LIST
     if name == "contrastive":
         return Contrastive
-    elif name == "stop":
-        return STOP
     elif name == "byol":
         return BYOL
     elif name == "simsiam":
