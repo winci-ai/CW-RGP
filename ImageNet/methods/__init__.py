@@ -1,13 +1,13 @@
 from .wmse import WMSE
-from .cwrg import CWRG
+from .cwrgp import CW_RGP
 
-METHOD_LIST = ["cwrg", "wmse"]
+METHOD_LIST = ["cwrgp", "wmse"]
 
 
 def get_method(name):
     assert name in METHOD_LIST
     if name == "wmse":
         return WMSE
-    elif name == "cwrg":
-        return CWRG
+    elif name == "cwrgp":
+        return CW_RGP
 

@@ -71,7 +71,7 @@ def get_cfg():
     parser.add_argument('--lars', action='store_true',
                     help='Use LARS')
     parser.add_argument(
-        "--method", type=str, choices=METHOD_LIST, default="cwrg", help="loss type",
+        "--method", type=str, choices=METHOD_LIST, default="cwrgp", help="loss type",
     )
     parser.add_argument(
         "--env_name",

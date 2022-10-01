@@ -12,7 +12,7 @@ def get_cfg():
     """ generates configuration from user input in console """
     parser = argparse.ArgumentParser(description="")
     parser.add_argument(
-        "--method", type=str, choices=METHOD_LIST, default="cwrg", help="loss type",
+        "--method", type=str, choices=METHOD_LIST, default="cwrgp", help="loss type",
     )
     parser.add_argument(
         "--wandb",
@@ -23,7 +23,7 @@ def get_cfg():
     parser.add_argument(
         "--env_name",
         type=str,
-        default="CWRG",
+        default="CWRGP",
         help="name of the run for wandb project",
     )
     parser.add_argument(

@@ -4,7 +4,7 @@ from methods.whitening import Whitening2dZCA
 from methods.base import BaseMethod
 from methods.losses import norm_mse_loss, covariance_loss
 
-class CWRG(BaseMethod):
+class CW_RGP(BaseMethod):
     """ implements CW-RGP loss """
     """ Channel Whitening """
 
@@ -29,7 +29,12 @@ class CWRG(BaseMethod):
         else:
             h = torch.cat(h)
         w_dim = h[0].size(-1)
-        loss = 0
+        mse_loss = 0
+        cov_loss = 0
+        if self.cov_w != 0:
+            for i in range(len(samples)):
+                cov_loss += covariance_loss(h[i*bs:(i+1)*bs], self.axis)
+
         for _ in range(self.w_iter):
             z = torch.empty_like(h)
             perm = torch.randperm(bs).view(-1, self.w_size)
@@ -43,8 +48,14 @@ class CWRG(BaseMethod):
                 for j in range(i + 1, len(samples)):
                     x0 = z[i * bs : (i + 1) * bs]
                     x1 = z[j * bs : (j + 1) * bs]
-                    loss += self.loss_f(x0, x1)
-        loss /= self.w_iter * self.num_pairs
+                    mse_loss += self.loss_f(x0, x1)
+        mse_loss /= self.w_iter * self.num_pairs
+        loss = mse_loss + self.cov_w * cov_loss
         return loss
+    
+    def step(self, epoch):
+        if epoch >= self.cov_stop:
+            self.cov_w = 0
+
 
 

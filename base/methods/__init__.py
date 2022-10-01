@@ -7,11 +7,11 @@ from .bn import BN
 from .pca import PCA
 from .plain import Plain
 from .wmse import WMSE
-from .cwrg import CWRG
+from .cwrgp import CW_RGP
 from .zero_icl import ZeroICL
 
 
-METHOD_LIST = ["cwrg","contrastive","zero_icl", "byol", 'simsiam', 'barlowtwins', 'vicreg', 'bn', 'pca', 'plain', 'pca', 'wmse']
+METHOD_LIST = ["cwrgp","contrastive","zero_icl", "byol", 'simsiam', 'barlowtwins', 'vicreg', 'bn', 'pca', 'plain', 'pca', 'wmse']
 
 
 def get_method(name):
@@ -36,7 +36,7 @@ def get_method(name):
         return WMSE
     elif name == "zero_icl":
         return ZeroICL
-    elif name == "cwrg":
-        return CWRG
+    elif name == "cwrgp":
+        return CW_RGP
     
 
