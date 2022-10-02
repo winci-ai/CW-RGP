@@ -17,12 +17,6 @@ The unsupervised pretraining scripts for small and medium datasets are shown in 
 
 The results are shown in the following table:
 
-| Method  |CIFAR-10 | CIFAR-100 |STL-10 | Tiny-ImageNet |
-| :--------:  |:-------------:| :--: | :--: | :--: |
-|   | **top-1** &nbsp; **5-nn** |**top-1** &nbsp; **5-nn**  |**top-1** &nbsp; **5-nn** | **top-1** &nbsp; **5-nn** |
-| CW-RGP 2|  91.92 &nbsp;   89.54 |  67.51 &nbsp;   57.35  |90.76 &nbsp;   87.34|  49.23 &nbsp;   34.04 |
-| CW-RGP 4|  92.47 &nbsp; 90.74| 68.26 &nbsp;  58.67 |92.04 &nbsp; 88.95| 50.24 &nbsp;  35.99 |
-
 <table><tbody>
 <!-- START TABLE -->
 <!-- TABLE HEADER -->
