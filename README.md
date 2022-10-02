@@ -23,6 +23,37 @@ The results are shown in the following table:
 | CW-RGP 2|  91.92 &nbsp;   89.54 |  67.51 &nbsp;   57.35  |90.76 &nbsp;   87.34|  49.23 &nbsp;   34.04 |
 | CW-RGP 4|  92.47 &nbsp; 90.74| 68.26 &nbsp;  58.67 |92.04 &nbsp; 88.95| 50.24 &nbsp;  35.99 |
 
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<th valign="bottom">Method</th>
+<th valign="bottom">CIFAR-10</th>
+<th valign="bottom">CIFAR-100</th>
+<th valign="bottom">STL-10</th>
+<th valign="center">Tiny-ImageNet</th>
+<!-- TABLE BODY -->
+<tr>
+<td align="center"></td>
+<td align="center">top-1&nbsp;5-nn</td>
+<td align="center">top-1&nbsp;5-nn</td>
+<td align="center">top-1&nbsp;5-nn</td>
+<td align="center">top-1&nbsp;5-nn</td>
+</tr>
+<tr>
+<td align="center">CW-RGP 2</td>
+<td align="center">91.92&nbsp;89.54</td>
+<td align="center">67.51&nbsp;57.35</td>
+<td align="center">90.76&nbsp;87.34</td>
+<td align="center">49.23&nbsp;34.04</td>
+</tr>
+<tr>
+<td align="center">CW-RGP 4</td>
+<td align="center">92.47&nbsp;90.74</td>
+<td align="center">68.26&nbsp;58.67</td>
+<td align="center">92.04&nbsp;88.95</td>
+<td align="center">50.24&nbsp;35.99</td>
+</tr>
+</tbody></table>
 ### Experimental Setup for Large-Scale Classification
 
 The unsupervised pretraining and linear classification scripts for ImageNet are shown in `scripts/ImageNet.sh`
