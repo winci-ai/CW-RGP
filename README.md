@@ -48,6 +48,7 @@ The results are shown in the following table:
 <td align="center">50.24&nbsp;&nbsp;35.99</td>
 </tr>
 </tbody></table>
+
 ### Experimental Setup for Large-Scale Classification
 
 The unsupervised pretraining and linear classification scripts for ImageNet are shown in `scripts/ImageNet.sh`
