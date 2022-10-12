@@ -1,7 +1,15 @@
 # An Investigation into Whitening Loss for Self-supervised Learning
 
-This is a PyTorch implementation of the paper.
+This is a PyTorch implementation of [CW-RGP](https://arxiv.org/abs/2210.03586).
 
+```
+@article{weng2022investigation,
+  title={An Investigation into Whitening Loss for Self-supervised Learning},
+  author={Weng, Xi and Huang, Lei and Zhao, Lei and Anwer, Rao Muhammad and Khan, Salman and Khan, Fahad Shahbaz},
+  journal={arXiv preprint arXiv:2210.03586},
+  year={2022}
+}
+```
 ## Requirements
 - Install PyTorch ([pytorch.org](http://pytorch.org))
 - Install wandb for Logging ([wandb.ai](https://wandb.ai/)) 
