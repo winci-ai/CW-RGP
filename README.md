@@ -1,8 +1,11 @@
 # An Investigation into Whitening Loss for Self-supervised Learning
 
+## Analysing Decomposition of Whitening Loss
 <p align="center">
   <img width="800" src="scripts/decompose.png">
 </p>
+
+## Whitened Output is not a Good Representation
 <p align="center">
   <img width="800" src="scripts/whitened.png">
 </p>
