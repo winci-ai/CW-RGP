@@ -1,7 +1,10 @@
 # An Investigation into Whitening Loss for Self-supervised Learning
 
 <p align="center">
-  <img width="500" src="scripts/decompose.png">
+  <img width="800" src="scripts/decompose.png">
+</p>
+<p align="center">
+  <img width="800" src="scripts/whitened.png">
 </p>
 
 This is a official implementation of [CW-RGP](https://arxiv.org/abs/2210.03586).
