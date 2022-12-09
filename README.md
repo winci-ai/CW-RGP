@@ -10,7 +10,7 @@
   <img width="800" src="scripts/whitened.png">
 </p>
 
-This is a official implementation of [CW-RGP](https://arxiv.org/abs/2210.03586).
+This is an official implementation of [CW-RGP](https://arxiv.org/abs/2210.03586).
 
 ```
 @inproceedings{
